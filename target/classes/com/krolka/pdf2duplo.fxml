@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="600.0" prefWidth="800.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.krolka.MainController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Pane prefHeight="44.0" prefWidth="760.0">
+      <children>
+
+          <Label fx:id="welcomeText" layoutX="354.0" layoutY="-5.0" prefHeight="54.0" prefWidth="411.0" textAlignment="CENTER" wrapText="true">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+      </children>
+   </Pane>
+
+    <TableView fx:id="tableView01" prefHeight="371.0" prefWidth="760.0">
+        <columns>
+            <TableColumn fx:id="tableview01FileName" prefWidth="282.4000244140625" text="File Name" />
+            <TableColumn fx:id="tableview01Path" prefWidth="476.0" text="Path" />
+        </columns>
+    </TableView>
+    <Pane prefHeight="53.0" prefWidth="760.0">
+        <children>
+            <Button layoutX="55.0" layoutY="12.0" mnemonicParsing="false" onAction="#loadFiles" text="Load Files" />
+            <Button layoutX="253.0" layoutY="12.0" mnemonicParsing="false" onAction="#clearFileList" text="Clear List" />
+            <Button fx:id="executeButton" disable="true" layoutX="625.0" layoutY="12.0" mnemonicParsing="false" onAction="#execute" text="Execute" />
+        </children>
+    </Pane>
+    <opaqueInsets>
+        <Insets />
+    </opaqueInsets>
+</VBox>

@@ -1,4 +1,6 @@
-com\krolka\App.class
+com\krolka\MainClass.class
 com\krolka\SystemInfo.class
-com\krolka\Test.class
+com\krolka\MainController.class
 module-info.class
+com\krolka\App.class
+com\krolka\PdfUtility.class
